@@ -1,46 +1,43 @@
 # IPL-win-Predictor
 IPL Win Predictor
-Overview
+# Overview
 The IPL Win Predictor is a machine learning project that forecasts the outcome of Indian Premier League (IPL) cricket matches using logistic regression. By analyzing historical match data and ball-by-ball delivery data, this model aims to provide accurate predictions of match results.
 
-Features
+# Features
 Predicts the winner of IPL matches using logistic regression.
 Utilizes historical match results and detailed ball-by-ball delivery data.
 Provides insights into model performance and prediction accuracy.
-#Datasets
-#match.csv
+
+# Datasets
+match.csv
   Contains historical data of IPL matches for the past 8 years.
   Includes details such as match date, team names, match result, and winner.
-#deliveries.csv
+deliveries.csv
   Contains ball-by-ball data for every delivery in the IPL matches.
   Includes details such as over number, ball number, runs scored, and extras.
   
-#Getting Started
+# Getting Started
 To get started with the IPL Win Predictor, follow these steps:
 
-#Prerequisites
+# Prerequisites
 Ensure you have the following installed:
 
   Python 3.8 or higher
-  pip (Python package installer)
-  Installation
 
-Install the required Python packages
-
-Download the datasets:
+# Download the datasets:
 
 match.csv containing historical match data.
 deliveries.csv containing ball-by-ball delivery data.
 
 Place both files in the data/ directory.
 
-Training the Model
+# Training the Model
 To train the logistic regression model, run:
 
 python train_model.py
 This script will load the data from match.csv and deliveries.csv, preprocess it, train the logistic regression model, and save the trained model to a file.
 
-Making Predictions
+# Making Predictions
 To make predictions for new matches, use the following command:
 
 python predict.py --match_data <path_to_new_match_data>
